@@ -1,0 +1,28 @@
+h2{
+    color: green;
+}
+
+input[type = "text"]{
+    border: none;
+    background-color: gray;
+    height: 40px;
+    font-size: 50px;
+} 
+
+input[type = "submit"]{
+    width: 120px;
+    height: 40px;
+    background-color: #3366ff;
+    font-size: 25;
+}
+
+input[type = "submit"]:hover{
+    cursor: pointer;
+    background: gray;
+}
+
+label{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: greenyellow;
+}

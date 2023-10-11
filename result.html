@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Profile Page</h1>
+    <p id = 'res'></p>
+
+
+    <script>
+        var data = window.location.search;
+        var params = new URLSearchParams(data);
+        console.log(params);
+
+
+        var firstname = params.get('fname');
+        var lastname = params.get('lname');
+
+        var getData = "First Name = "+firstname+"<br>";
+            getData += 'Last Name = '+lastname+"<br>";
+
+        document.getElementById('res').innerHTML = getData;
+    </script>
+</body>
+</html>
